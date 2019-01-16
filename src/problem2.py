@@ -146,6 +146,9 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        self.a = Point(a)
+        self.b = Point(b)
+        self.c = Point(c)
 
     def area(self):
         """
@@ -186,6 +189,8 @@ class Triangle(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+
+        math.sqrt()
 
     def bigger_triangle(self, triangle2):
         """
