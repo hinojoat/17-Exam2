@@ -13,7 +13,7 @@ import time
 def main():
     """ Calls the   TEST   functions in this module. """
     # run_test_problem1a()
-    run_test_problem1b()
+    # run_test_problem1b()
     # run_test_problem1c()
     # run_test_problem1d()
 
@@ -300,10 +300,18 @@ def problem1b(strings):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
-    answer = []
+    answer = ''
+
     for k in range(len(strings)):
-        if is_prime(sum_of_digits(strings[k])) == True:
-            answer.append()
+        item = strings[k]
+        if type(item) is int:
+            if is_prime(sum_of_digits(strings[k])) == True:
+                answer = answer + strings[k]
+        if type(item) is str:
+            s = strings[k]
+            num = len(s)
+            if is_prime(sum_of_digits(num)) == True:
+                answer = answer + strings[k]
     return answer
 
 
